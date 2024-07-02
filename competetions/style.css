@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background: url('https://th.bing.com/th/id/R.14ae53b8d112e02b22d0f2bff7f4f7a8?rik=uarqANaeKB5%2fdg&riu=http%3a%2f%2fi.imgur.com%2fYr32yur.gif&ehk=kzLZtjbPT80GtQ%2bGrH5dL%2fwmblkB2dpPg8lqELfiN3Q%3d&risl=1&pid=ImgRaw&r=0');
+    background-size: cover;
+}
+
+.navlist{
+    text-align: center;
+    font-family: 'kajiro';
+    font-size: 100px;
+    letter-spacing: 8px;
+    color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.card {
+    width: 230px;
+    height: 140px;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: .3s linear;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s linear;
+    z-index: 1;
+}
+
+.card p{
+    z-index: 0;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+    transition: .3s linear;
+}
+
+.card:hover img {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .name {
+    margin: 0px;
+    position: absolute;
+    bottom: -50px;
+    left: 1;
+    padding: px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    transition: 0.3s;
+    transform: translateY(100%);
+    box-shadow: 0px 4px 8px rgba(224, 219, 219, 0.921);
+}
+
+.card:hover .name{
+    bottom: 0;
+    transform: translateY(0);
+    font-size: 35px;
+    font-weight: 500;
+    color: #000;
+    background-color: #ffffff7d;
+}
+
+.card.expanded {
+    width: 90%;
+    height: 75%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(40, 33, 33);
+    color: #f0f0f0;
+}
+
+.card.expanded img {
+    height: 300px;
+    width: 400px;
+    margin: 30px;
+    border-radius: 10px;    
+}
+
+.card.expanded .right{
+    margin: 0px;
+    letter-spacing: 2px;
+    height: 350px;
+}
+
+.card.expanded .right p{
+    margin: 20px;
+    height: 195px;
+    font-size: 17px;
+}
+
+.card.expanded .name{
+    font-family: 'kajiro';
+    color: #f0f0f0;
+    font-size: 80px;
+    letter-spacing: 7px;
+}
+
+.card.expanded button{
+    pointer-events: all;
+    margin-left: 73%;
+    padding: .7vw 2vw;
+    height: 70px;
+    font-size: 3vw;
+    letter-spacing: 2px;
+    margin-top: 2vw;
+    font-family: "kajiro";
+}
+
