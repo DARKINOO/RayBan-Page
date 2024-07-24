@@ -21,7 +21,7 @@ with open("intents.json") as file:
 
 # Load data
 try:
-    with open("data.pickle", "rb") as f:
+    with open("datasource venv/bin/activate.pickle", "rb") as f:
         words, labels, training, output = pickle.load(f)
 except FileNotFoundError:
     # Code to process the intents file and generate the training data
@@ -106,7 +106,7 @@ def bag_of_words(s, words):
     
     return np.array(bag)
 
-def predict_class(sentence):
+def predict_class(sentence, words):
     bow = bag_of_words(sentence, words)
     results = model.predict([bow])
     results_index = np.argmax(results)
