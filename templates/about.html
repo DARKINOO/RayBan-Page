@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+
+
+
+    <div class="logo">
+      <div class="navbar">
+        <a href=""><h3>About</h3></a>
+        <a href="#projects"><h3>Projects</h3></a>
+        <a href="#technology"><h3>Technology</h3></a>
+        <a href="#team"><h3>Team</h3></a>
+        <a href="#contact"><h3>Contact Us</h3></a>
+      </div>
+      <h1 class="logoName">Xananoids</h1>
+      <p class="tagline">
+        <span>The</span> <span>Robotic</span> <span>People</span>
+      </p>
+    </div>
+    
+    <div class="history">
+      <h1>Who Are We</h1>
+      <p>XANANOIDS, the club by robotic people of JECRC College, is the group of students who works and are 
+        interested in the field of robotics. It was founded in 2004. Since the beginning, students of 
+        this club are developing various educational robot, with this, the members of this club are 
+        taking participation and winning various titles and awards at different IITs, NITs, ABU 
+        ASIA-PACIFIC ROBOCON CONTEST and various regional institutions.</p> 
+        <p>Objective of the club is to deal with the behaviour based robotics i.e. cooperation and 
+        communication between robotics, also the main idea behind the formation of the club is to 
+        develop cost effective educational robotic platform for students.
+        Currently, the club has a team of 40 members. All the members are engineering students of 
+        various branches from different semesters and working on development of various industry 
+        level projects.</p> 
+    </div>
+
+    <div id="projects" class="box">
+      <div class="round1 heading"><span>Projects</span></div>
+
+      <div class="images">
+        <span>
+          <img src="{{ url_for('static', filename='images/black.jpeg')}}  " alt="" />
+          <h4>Black: Bluetooth Controlled Robot</h4>
+        </span>
+        <span>
+
+          <img src="{{ url_for('static', filename='images/tejas.jpeg')}} " alt="" />
+          <h4>Tejas: The War Bot</h4>
+        </span>
+        <span>
+
+          <img src="http://127.0.0.1:5000/static/images/DSC02212.JPG " alt="" />
+          <h4>Xan-Drone</h4>
+        </span>
+        <span>
+
+          <img src="{{ url_for('static', filename='images/images/img4.jpg') }}  " alt="" />
+          <h4>Hollow Clock</h4>
+        </span>
+        <span>
+
+          <img src="{{ url_for('static', filename='images/images/img4.jpg') }}  " alt="" />
+          <h4>CardioSage-Ml Model</h4>
+        </span>
+        <span>
+
+          <img src="{{ url_for('static', filename='images/images/img5.jpg') }} " alt="" />
+          <h4>King-F0 Bot</h4>
+        </span>
+        <span>
+
+          <img src="{{ url_for('static', filename='images/spider.jpeg') }}  " alt="" />
+          <h4>Robo-Spider</h4>
+        </span>
+      </div>
+
+      <div id="hideonmobile" class="round2"></div>
+    </div>
+    <div id="projects" class="box2">
+      <div class="heading">Projects</div>
+
+      <div class="images2">
+        <div class="icard">
+          <img src="{{ url_for('static', filename='images/images/img1.jpg') }}  " alt="" />
+          <h4>Lorem, ipsum dolor.1</h4>
+        </div>
+
+        <div class="icard">
+          <img src="{{ url_for('static', filename='images/images/img1.jpg') }}  " alt="" />
+          <h4>Lorem, ipsum dolor.1</h4>
+        </div>
+         
+        <div class="icard">
+          <img src="{{ url_for('static', filename='images/images/img1.jpg') }} " alt="" />
+          <h4>Lorem, ipsum dolor.1</h4>
+        </div>
+
+        <div class="icard">
+          <img src="{{ url_for('static', filename='images/images/img1.jpg') }}  " alt="" />
+          <h4>Lorem, ipsum dolor.1</h4>
+        </div>
+
+        <div class="icard">
+          <img src="{{ url_for('static', filename='images/images/img1.jpg') }}  " alt="" />
+          <h4>Lorem, ipsum dolor.1</h4>
+        </div>
+
+        <div class="icard">
+          <img src="{{ url_for('static', filename='images/images/img1.jpg') }}  " alt="" />
+          <h4>Lorem, ipsum dolor.1</h4>
+        </div>
+
+          
+      </div>
+    </div>
+
+    <div id="technology" class="technologyPage">
+      <h1 class="heading techHeading">Technology We Work On</h1>
+      <div class="techDetails">
+        <div class="techParts">
+          <img src="{{ url_for('static', filename='images/images/technology/1.png') }}  " alt="" />
+          <h3>Arduino</h3>
+        </div>
+        <div id="right" class="techParts">
+          <img src="{{ url_for('static', filename='images/images/technology/2.png') }} " alt="" />
+          <h3>Internet of Things(IoT)</h3>
+        </div>
+        <div class="techParts">
+          <img src="{{ url_for('static', filename='images/images/technology/3.png') }}  " alt="" />
+          <h3>Machine Learning</h3>
+        </div>
+        <div id="right" class="techParts">
+          <img src="{{ url_for('static', filename='images/images/technology/4.png') }}  " alt="" />
+          <h3>Drone and air control</h3>
+        </div>
+        <div class="techParts">
+          <img src="{{ url_for('static', filename='images/images/technology/5.png') }}  " alt="" />
+          <h3>Computer Vision</h3>
+        </div>
+        <div id="right" class="techParts">
+          <img src="{{ url_for('static', filename='images/images/technology/6.png') }}  " alt="" />
+          <h3>Artificial Intelligence</h3>
+        </div>
+        <div class="techParts">
+          <img src="{{ url_for('static', filename='images/images/technology/7.png') }}  " alt="" />
+          <h3>Mecharonics</h3>
+        </div>
+        <div id="right" class="techParts">
+          <img src="{{ url_for('static', filename='images/images/technology/8.png') }}  " alt="" />
+          <h3>Web Development</h3>
+        </div>
+      </div>
+    </div>
+    <div id="thanks" class="page3">
+      <h1 id="st"> Our Special Thanks To</h1> 
+       <div id="stc" class="team-container">
+           <div class="team-member">
+               <img src="https://media.licdn.com/dms/image/D5603AQFB7RLYNQzphQ/profile-displayphoto-shrink_400_400/0/1718250032831?e=1726704000&v=beta&t=EV7DiJHWqFIqVBN5Es5m95edCmRN87CviMr1G7wxThk" alt="Team Member 1">
+               <div class="overlay">
+                   <h3>Arpit Agarwal</h3>
+                   <h2>Director</h2>
+                   <div class="social-icons">
+                       <a href="https://www.linkedin.com/in/arpitjecrc?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2Br17sqSZT%2B20K%2F8dVumqfw%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                   </div>
+               </div>
+           </div>
+           <div class="team-member">
+            <img id="sir" src="{{ url_for('static', filename='images/images/vk sir.jpeg') }} " alt="Team Member 1">
+            <div class="overlay">
+                <h3>Vk Chandna</h3>
+                <h2>Principal</h2>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/prof-dr-vinay-kumar-chandna-leadership-change-management-116a341b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsAubRQf8Qh6CTWoo6QCUvg%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="team-member">
+          <img src="https://media.licdn.com/dms/image/D4D03AQF-jJA14vvyyg/profile-displayphoto-shrink_400_400/0/1693291236099?e=1726704000&v=beta&t=Ma3igX7xCIGD4aSTl-P-A2S_XzX3-WzjHKOlpeoVfOc" alt="Team Member 1">
+          <div class="overlay">
+              <h3>Dheemant Agarwal</h3>
+              <h2>Chairman</h2>
+              <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/dheemantagrawal?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYfAWBRYkQkSpJ4b3mEgVOA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+          </div>
+      </div> 
+      <div id="vks" class="team-member">
+        <img src="https://media.licdn.com/dms/image/C4D03AQGPtoOdy1xq2g/profile-displayphoto-shrink_400_400/0/1651210651821?e=1726704000&v=beta&t=d1PJrvGMxHJ_bjpP6U9XJnImSXymknEoWDrBniRtXAQ" alt="Team Member 2">
+        <div class="overlay">
+            <h3>Vikash Sharma</h3>
+            <h2>Faculty Coordinator</h2>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/vikas-sharma-54b3271ab?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7FQDNxurScO0Zha9vhKtgA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+        <div class="team-member">
+          <img src="https://media.licdn.com/dms/image/C5603AQHx9DNVyYyPYQ/profile-displayphoto-shrink_400_400/0/1648909270933?e=1726704000&v=beta&t=Nw2u2F87OO63Q8dtgldQhhcrAm1hyDTzkpiXEo00jCM" alt="Team Member 1">
+          <div class="overlay">
+              <h3>Pranshu Sharma</h3>
+              <h2>SDO Head</h2>
+              <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/pranshujecrc?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmR6WzVLVSjidESYSs0a99Q%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="team-member">
+        <img src="https://media.licdn.com/dms/image/C4E03AQGTbzNNvjoZ5g/profile-displayphoto-shrink_400_400/0/1625752626624?e=1726704000&v=beta&t=flxDvug1zmGhZnt2upkeyEX3SzqApcLK2jfczyc2ikE" alt="Team Member 1">
+        <div class="overlay">
+            <h3>Mohak Khanduja</h3>
+            <h2>SDO Head</h2>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mohakkhanduja?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGwyJxeRIQwCSz2KqmbS%2Fcw%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+       </div>
+   </div>
+
+    <div id="team" class="page3">
+       <h1>TEAM LEADS</h1> 
+        <div class="team-container">
+            <div class="team-member">
+                <img id="sir" src="{{ url_for('static', filename='images/aayusir.png') }}  " alt="Team Member 1">
+                <div class="overlay">
+                    <h3>Aayu Shah</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aayu-sah-a318a1239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0cyEgwHuTtSOD5Bq1psQyw%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/aayu.sah?igsh=aHJzNTk4YTZ2eDVs" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <h2 id="role">Hardware</h2>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="https://media.licdn.com/dms/image/D4D03AQHGkqLsdh7htw/profile-displayphoto-shrink_400_400/0/1683180298948?e=1725494400&v=beta&t=4yXKxevetqmwygDlvLO0m75osreCP0m4mpL7e-goNeQ" alt="Team Member 2">
+                <div class="overlay">
+                    <h3>Abhishek Choitani</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/abhishek-choithani-bb1928217?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcXqLBQ3ET1G8lepWZ4QKZA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <h2 id="role">Software</h2>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/vaibhavsir.jpg') }} " alt="Team Member 3">
+                <div class="overlay">
+                    <h3>Vaibhav Sindhav</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vaibhav-sindhav-3980b2227?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BID1FQLpTT1KDMSI3VsaMSA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/vs_beast_?igsh=bDNuaTUyc2EzMGVj" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <h2 id="role">Media</h2>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="https://media.licdn.com/dms/image/D4D03AQHolDYGTQNgCg/profile-displayphoto-shrink_400_400/0/1668594236313?e=1725494400&v=beta&t=0pmN2twc4u2x34FE_ZuaxsVxRIYX9hP_k3sie0gUiCc" alt="Team Member 3">
+                <div class="overlay">
+                    <h3>Varuna Sharma</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/varuna-sharma-81323b254?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWBP8bQGDScWDBo%2F0SPnsJg%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/varuna_12?igsh=OWR4d3Y1ZWZlamJ5" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <h2 id="role">Creation</h2>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <div id="team" class="page4">
+      <h1>TEAM COORDINATORS</h1> 
+       <div class="team-container">
+           <div class="team-member">
+               <img id="jai" src="{{ url_for('static', filename='images/jai.jpeg') }} " alt="Team Member 1">
+               <div class="overlay">
+                   <h3>Jai Dhingra</h3>
+                   <div class="social-icons">
+                       <a href="https://www.linkedin.com/in/jai-dhingra-412419259?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bxs5nUOuySza29rGiCM9ecg%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                       <a href="https://www.instagram.com/jai_dhingra_028?igsh=MWM2a3Z5cmEyczdjeg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                   </div>
+               </div>
+           </div>
+           <div class="team-member">
+               <img src="https://media.licdn.com/dms/image/D5603AQHVqbhZLK4PIg/profile-displayphoto-shrink_400_400/0/1684139356277?e=1725494400&v=beta&t=72dHC_kPliH7B0wwQjEvQ0VIHRw4UIu1xU79FFlt56E" alt="Team Member 2">
+               <div class="overlay">
+                   <h3>Jeeves Saini</h3>
+                   <div class="social-icons">
+                       <a href="https://www.linkedin.com/in/jeeves-saini-058488259?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B4HrI229PSySMb0OeEjEjiw%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                       <a href="https://www.instagram.com/sainijeeves?igsh=MW5kdTJ4N3VqOHV5Ng==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                   </div>
+               </div>
+           </div>
+           <div class="team-member">
+               <img src="https://media.licdn.com/dms/image/D4D03AQFz_5eO93A0Bg/profile-displayphoto-shrink_400_400/0/1688878993904?e=1725494400&v=beta&t=WHx1fOPJI5eKozhnbR5ocXgg_DKtJHiv2lU4C4rTEA0" alt="Team Member 3">
+               <div class="overlay">
+                   <h3>Saksham Saraf</h3>
+                   <div class="social-icons">
+                       <a href="https://www.linkedin.com/in/saksham-saraf-633280256?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BE3FP6yB%2FSJ%2Bwow4%2B3%2FGfDw%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                       <a href="https://www.instagram.com/saraf_saksham?igsh=MXF5empyejl3NGZkYw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                   </div>
+               </div>
+           </div>
+
+           <div class="team-member">
+            <img src="{{ url_for('static', filename='images/yashi.jpeg') }}  " alt="Team Member 3">
+            <div class="overlay">
+                <h3>Yash Jain</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/yash-jain-38552828a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTejkkPe6SwGIGm21NJbPeQ%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/beingzyash?igsh=M245YWJlYTQ5anNy" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                 </div>
+               </div>
+          </div>
+           
+             <div class="team-member">
+              <img src="https://media.licdn.com/dms/image/D5603AQGmtA_NMC8oIA/profile-displayphoto-shrink_400_400/0/1705953909724?e=1725494400&v=beta&t=FefWjZpMwCtuxQ3eWtYHfeamZrCOKEU5eeNGimDX6W4" alt="Team Member 3">
+              <div class="overlay">
+                  <h3>Vikash Bairwa</h3>
+                  <div class="social-icons">
+                      <a href="https://www.linkedin.com/in/vikash-bairwa-859b30265?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiGTRx4iIQNiroUyp5YQsOQ%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="https://www.instagram.com/ig_vikash14?igsh=dDZwMzBsNmgzYnp4" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                   </div>
+                 </div>
+            </div>
+
+            <div class="team-member">
+              <img src="https://media.licdn.com/dms/image/D5603AQErxLdMNG5n7Q/profile-displayphoto-shrink_400_400/0/1696171037653?e=1725494400&v=beta&t=kC_mh1qDaTb6TXVW-zZN28mYA3lneqS1KTRn45RPSl4" alt="Team Member 3">
+              <div class="overlay">
+                  <h3>Tushar Jangid</h3>
+                  <div class="social-icons">
+                      <a href="https://www.linkedin.com/in/tushar-jangid-17a301293?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBsXzyC8GQp2dXLUpyI7ZAQ%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="https://www.instagram.com/tushar_0933?igsh=MWdxa2I2bnQ1aWRrbg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                   </div>
+                 </div>
+            </div>
+
+
+            <div class="team-member">
+              <img src="{{ url_for('static', filename='images/tanushka.jpeg') }}  " alt="Team Member 3">
+              <div class="overlay">
+                  <h3>Tanushka Jangid</h3>
+                  <div class="social-icons">
+                      <a href="https://www.linkedin.com/in/tanushka-jangid?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNv3MAMerREy9fruOrRNnJQ%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="https://www.instagram.com/tanushka_25_?igsh=aWp2dGkzcnQ5Z3oz" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                   </div>
+                 </div>
+            </div>
+
+
+            <div class="team-member">
+              <img src="{{ url_for('static', filename='images/sidhant.jpeg') }}  " alt="Team Member 3">
+              <div class="overlay">
+                  <h3>Sidhant Mishra</h3>
+                  <div class="social-icons">
+                      <a href="https://www.linkedin.com/in/-sidhantmishra?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B5OXTmAHwQOWgfIU8DsAJxw%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="https://www.instagram.com/sidhant_.mishra?igsh=MWpuMGRkaHYzanM5bA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                   </div>
+                 </div>
+            </div>
+
+            <div class="team-member">
+              <img src="https://media.licdn.com/dms/image/D5603AQGU0xJBG_2rtg/profile-displayphoto-shrink_400_400/0/1709396837995?e=1726704000&v=beta&t=Urj6mmIfYGrIf3RHCp3hf7Q0_v7y-scXv_RE_uuGFIM" alt="Team Member 3">
+              <div class="overlay">
+                  <h3>Chanchal Sharma</h3>
+                  <div class="social-icons">
+                      <a href="https://www.linkedin.com/in/-chanchalsharma?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B4hxpu4hBTnC1JSS0BdPzpg%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="https://www.instagram.com/schanchal_7/?utm_source=ig_web_button_share_sheet"><i class="fa-brands fa-instagram"></i></i></a>
+                   </div>
+                 </div>
+            </div>
+
+
+
+       </div>
+    </div>
+
+    <div id="thanks2" class="page3">
+      <h1 id="st">Alumni </h1> 
+       <div id="stc2" class="team-container">
+           <div class="team-member">
+               <img src="{{ url_for('static', filename='images/manav sir.jpeg') }}  " alt="Team Member 1">
+               <div class="overlay">
+                   <h3>Manvendra Shekhawat</h3>
+                   <h2>2020-2024</h2>
+                   <div class="social-icons">
+                       <a href="https://www.linkedin.com/in/manvendra-singh-shekhawat2002?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bw9ZGmUTZQ2qdqmewLqM%2BZQ%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                   </div>
+               </div>
+           </div>
+           <div class="team-member">
+            <img src="{{ url_for('static', filename='images/ronak sir.jpeg') }}  " alt="Team Member 1">
+            <div class="overlay">
+                <h3>Roonak Khandelwal</h3>
+                <h2>2020-2024</h2>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/roonak-khandelwal?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtsPXUXX7Q5OP8E4eqe2ubQ%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="team-member">
+          <img src="https://media.licdn.com/dms/image/C4D03AQGBhqB0_-MHUA/profile-displayphoto-shrink_400_400/0/1649924818629?e=1726704000&v=beta&t=uyB-DGz3mRhjZN-UQ-bJD1_mYktfbOQ9lRh66JfudiQ" alt="Team Member 1">
+          <div class="overlay">
+              <h3>Akshat Khandelwal
+              </h3>
+              <h2>2020-2024</h2>
+              <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/akshat-khandelwal-22a929202?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BH%2BVI2LdtR4uFNtjGguWN3Q%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+          </div>
+      </div> 
+      <div class="team-member">
+        <img src="https://media.licdn.com/dms/image/D5603AQG5iMFBbiCpWg/profile-displayphoto-shrink_400_400/0/1714100447926?e=1726704000&v=beta&t=XBf6q_-Kj00QIWgawWTNe2HTAq41Qog3gaHJzRUVCkQ" alt="Team Member 2">
+        <div class="overlay">
+            <h3>Yash Kumar More</h3>
+            <h2>2020-2024</h2>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/yash-kumar-more-16534a224?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BA%2Bhe8NEsS3y7ZbL7GSqz3Q%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+        <div class="team-member">
+          <img src="{{ url_for('static', filename='images/shubham sir.jpeg') }} " alt="Team Member 1">
+          <div class="overlay">
+              <h3>Shubham Gupta</h3>
+              <h2>2018-2022</h2>
+              <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/shubham-gupta-sg?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbVgnDON2TR%2BHuLX0tNam5Q%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="team-member">
+        <img src="https://media.licdn.com/dms/image/D5603AQHJ3DTs_BUL_w/profile-displayphoto-shrink_400_400/0/1714421815215?e=1726704000&v=beta&t=_eaimzn8EMlxkftu6U0wA3MKfdtxDIrhG7SZ1tmxP98" alt="Team Member 1">
+        <div class="overlay">
+            <h3>Jaya Mittal</h3>
+            <h2>2016-2020</h2>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/jayamittal?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbvOk%2FdzIT7qo1ILFQ91Qtw%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="team-member">
+      <img src="https://media.licdn.com/dms/image/D4D03AQFhdsEHLet_mg/profile-displayphoto-shrink_800_800/0/1694530837428?e=1726704000&v=beta&t=kEPLtlquqR5z7qKdsVwKcdMqZYOC5C3K6NaEzQ7T40w" alt="Team Member 1">
+      <div class="overlay">
+          <h3>Mohit Parwani</h3>
+          <h2>2020-2024</h2>
+          <div class="social-icons">
+              <a href="https://www.linkedin.com/in/mohit-parwani-b1a72821a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBDQm5oy3Th29UPTU0ER26g%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+      </div>
+  </div>
+  <div class="team-member">
+    <img src="https://media.licdn.com/dms/image/C4D03AQHXGhul-VjuFQ/profile-displayphoto-shrink_400_400/0/1650207950315?e=1726704000&v=beta&t=ilMSAswkJXO_21WdaJM6rnmbHCh-yWIDUTdsISoScKk" alt="Team Member 1">
+    <div class="overlay">
+        <h3>Mohit Joshi</h3>
+        <h2>2020-2024</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mohit-joshi-2b6171210?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjH2Eky%2BjR1q%2BXlbPSLfVtw%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+</div>
+  
+ </div>
+</div> 
+
+  <footer id="contact" class="footer">
+    <ul class="social-icon">
+      <li id="loc" class="social-icon__item"><a class="social-icon__link" href="https://www.bing.com/ck/a?!&&p=68278780ba9a118eJmltdHM9MTcxOTk2NDgwMCZpZ3VpZD0xNjQ4ODExMS05ZWM5LTY1YzEtMTMyYS05MzJiOWYzYjY0ZTUmaW5zaWQ9NTUwNw&ptn=3&ver=2&hsh=3&fclid=16488111-9ec9-65c1-132a-932b9f3b64e5&u=a1L21hcHM_Jm1lcGk9MTJ-RGlyZWN0aW9uc35Vbmtub3dufkRpcmVjdGlvbl9CdXR0b24mdHk9MCZydHA9cG9zLjI2Ljg5MjQ1MjIzOTk5MDIzNF83NS44MDY2MTc3MzY4MTY0X19KRUNSQyUyMEZvdW5kYXRpb25fX2VffiZtb2RlPWQmdj0yJnNWPTE&ntb=1">
+        <ion-icon name="Location"></ion-icon><p>JECRC Foundation, <br> Jaipur</p>
+      </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://mail.google.com/mail/u/0/#inbox?compose=HfxTvRQvsVFVMnMssSqZwfNrdltzRcJqLKrtscrPSkNsFXSSlMqrvwHNCkwfVdSLgMjSzLvxlVzdDGKXrjvTGCDSGTqkWxNZQbzLqvTrxwCPmNgsvRMgNlXdQrlNGKFPrFbHsFDPLSfPfNhQgmjttKzpBsgRBdWCkbmcFv">
+          <ion-icon name="Mail"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="http://www.youtube.com/@xananoidsclub8813">
+          <ion-icon name="logo-Youtube"></ion-icon>
+        </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/XananoidsRobotic">
+          <ion-icon name="logo-Github"></ion-icon>
+        </a></li>  
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/company/78988606/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BOlAV%2BQRXSRyLvbRxz9Lryg%3D%3D">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/xananoidsclub?igsh=ZnQ4OHhnaTc2bThr">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+      <li id="phone" class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="Call"></ion-icon><h5>Call Us</h5><p>+91 82792 17748 ,<br> +91 81900 86164</p>
+        </a></li>  
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="/">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="comp.html">Competetions</a></li>
+      <li class="menu__item"><a class="menu__link" href="new_reg.html">Join Now</a></li>
+      <li class="menu__item"><a class="menu__link" href="achievments.html">Achievements</a></li>
+
+    </ul>
+    <p>&copy; 2024 Xananoids | All Rights Reserved | Developed & Maintained By Xananoids Development Team</p>
+  </footer>
+    
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="{{ url_for('static', filename='js/about.js') }}"></script>
+  </body>
+</html>
