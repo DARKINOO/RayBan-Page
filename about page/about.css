@@ -89,6 +89,7 @@ body {
   height: 70vh;
   background-image: url('xan bg.jpeg');
   background-position: center;
+  background-size: cover;
   background-blend-mode: overlay;
   background-color: #545151;
   display: flex;

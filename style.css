@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'kajiro';
+    src: url('kajiro.woff2'),
+         url('kajiro.woff');
+}
+
 *{
     margin: 0;
     padding: 0;
