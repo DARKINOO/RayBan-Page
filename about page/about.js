@@ -82,38 +82,38 @@ tl2.from('.techParts:nth-child(2n)',{
 })
 
 
-tl3.from('.page3',{
-    transform: "translateX(150%)",
+// tl3.from('.page3',{
+//     transform: "translateX(150%)",
     
-    stagger : 0.05,
-    opacity : 0,
-    scrollTrigger: {
-      trigger: ".team-container",
-      scroller: "body",
-      // markers: true,
-      start: "top 100%",
-      end: "top 50%",
-      delay: 10,
-      scrub: 4,
-      // pin: true
-    }
-  })
+//     stagger : 0.05,
+//     opacity : 0,
+//     scrollTrigger: {
+//       trigger: ".team-container",
+//       scroller: "body",
+//       // markers: true,
+//       start: "top 100%",
+//       end: "top 50%",
+//       delay: 10,
+//       scrub: 4,
+//       // pin: true
+//     }
+//   })
 
-  tl3.from('.page4',{
-    transform: "translateX(-150%)",
-    stagger : 0.45,
-    opacity : 0,
-    scrollTrigger: {
-      trigger: ".team-member",
-      scroller: "body",
-      delay: 20,
-      // markers: true,
-      start: "top 100%",
-      end: "top 50%",
-      scrub: 4,
-      // pin: true
-    }
-  })  
+//   tl3.from('.page4',{
+//     transform: "translateX(-150%)",
+//     stagger : 0.45,
+//     opacity : 0,
+//     scrollTrigger: {
+//       trigger: ".team-member",
+//       scroller: "body",
+//       delay: 20,
+//       // markers: true,
+//       start: "top 100%",
+//       end: "top 50%",
+//       scrub: 4,
+//       // pin: true
+//     }
+//   })  
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
