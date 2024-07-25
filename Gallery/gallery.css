@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'kajiro';
-  src: url('kajiro.woff2'),
-       url('kajiro.woff');
+  src: url(/Kajiro.ttf);
 }
 
 *{
