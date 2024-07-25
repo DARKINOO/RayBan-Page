@@ -25,7 +25,7 @@ body {
 }
 
 .info-box {
-  background-image: url('http://127.0.0.1:5501/Gallery/DSC02761.JPG');
+  background-image: url('/Gallery/DSC02761.JPG');
   background-size: cover;
   background-blend-mode: overlay;
   flex: 1;
@@ -84,7 +84,7 @@ body {
 .register-box {
     flex: 1;
     background-color: rgb(147, 138, 138);
-    background-image: url('http://127.0.0.1:5501/Gallery/DSC02760.JPG');
+    background-image: url('/Gallery/DSC02760.JPG');
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;

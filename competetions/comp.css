@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     height: 100vh;
     margin: 0;
-    background-image: url('http://127.0.0.1:5501/Gallery/DSC02117.JPG');
+    background-image: url('/Gallery/DSC02117.JPG');
     background-color: #514b4b;
     background-size: cover;
     background-blend-mode: overlay;
