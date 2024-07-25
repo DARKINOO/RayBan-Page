@@ -223,6 +223,10 @@ html,body{
     text-decoration: none;
 }
 
+#para{
+    display: none;
+}
+
 
 #workingarea #hero #heroright .chatbot-button:hover {
     transform: scale(1.1);
