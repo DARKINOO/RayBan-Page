@@ -117,8 +117,8 @@ body {
 
 .register-box .input-box {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    /* flex-wrap: wrap;
+    gap: 20px; */
     justify-content: space-evenly;
     margin-bottom: 30px;
     font-size: 15px;
@@ -383,6 +383,14 @@ body {
     border-radius: 5px;
   }
 
+  .register-box .input-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
 
 
     .footer {
