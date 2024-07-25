@@ -520,7 +520,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     height: 1000px;
-  
 }
 
 .page4 .team-member {
@@ -528,7 +527,7 @@ body {
   width: 300px;
   height: 350px;
   animation: 1.5s fadeInUp;
-  margin-left: 120px;
+  margin-left: 50px;
   margin-top: 30px;
   overflow: hidden;
   border-radius: 10px;

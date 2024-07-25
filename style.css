@@ -663,7 +663,7 @@ html,body{
     }
     #main{
         height: 85vh;
-        background-image: url('mini.jpg');
+        background-image: url('robot.jpg');
         background-position: center;
         background-size: cover;
     }

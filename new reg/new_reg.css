@@ -322,7 +322,7 @@ body {
   .container{
     display: flex;
     flex-direction: column;
-    height: 150vh;
+    height: 170vh;
   }
 
   .info-box{
@@ -388,13 +388,13 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-evenly;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: 15px;
 }
 
 
     .footer {
-      margin-top: 50px;
+      margin-top: 60px;
         padding: 10px;
         width: 90%;
         height: 150px;
