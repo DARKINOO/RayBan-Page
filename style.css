@@ -50,6 +50,7 @@ html,body{
     width: 100%;
 }
 
+
 #workingarea #nright {
     display: flex;
     align-items: center;
@@ -65,7 +66,22 @@ html,body{
 #workingarea #nleft img{
     height: 60px;
     border-radius: 50%;
+    
 }
+
+#logo{
+    animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating {
+    from {
+      transform: rotateY(0deg);
+    
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+  }
 
 
 #nav a{
@@ -73,6 +89,41 @@ html,body{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#menu{
+    width: 26px;
+    height: 10vh;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 -10px rgba(0,0,0,0.1);
+    display: none;
+    gap: 40px;
+    padding-top: 20px;
+    flex-direction: column;
+    padding-left: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar a{
+    width: 100%;
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
     font-weight: 600;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -168,6 +219,11 @@ html,body{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.chatbot-button a{
+    text-decoration: none;
+}
+
+
 #workingarea #hero #heroright .chatbot-button:hover {
     transform: scale(1.1);
 }
@@ -196,7 +252,7 @@ html,body{
 
 #workingarea #hero #heroright .chat-header {
     pointer-events: all;
-    background: linear-gradient(135deg, #f4f5f6, #a27f7f);
+    background: linear-gradient(135deg, #4c66dc, #88e7ea);
     color: black;
     padding: 5px;
     text-align: center;
@@ -233,14 +289,14 @@ html,body{
     flex: 1;
     padding: 20px;
     overflow-y: auto;
-    background-color: #f9f9f9;
+    background-color: #f7f7f7;
 }
 
 #workingarea #hero #heroright .chat-input {
     display: flex;
     pointer-events: all;
     border-top: 1px solid #ddd;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 #workingarea #hero #heroright .chat-input input {
@@ -257,8 +313,8 @@ html,body{
     padding: 15px;
     border: none;
     pointer-events: all;
-    background: linear-gradient(135deg, #8f9294, #736666);
-    color: rgb(241, 232, 232);
+    background: linear-gradient(135deg, #4c66dc, #88e7ea);
+    color: black;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -289,14 +345,14 @@ html,body{
     padding: 12px 18px;
     pointer-events: all;
     border-radius: 20px;
-    background-color: #e0e0e0;
+    background-color: #616161;
     position: relative;
     animation: fadeIn 0.3s ease-out;
     font-size: 15px;
 }
 
 #workingarea #hero #heroright .message.user p {
-    background-color: #84878b;
+    background-color: #565a60;
     color: white;
 }
 
@@ -322,7 +378,7 @@ html,body{
 
 
 #workingarea #hero #heroright p:nth-child(3){
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .footer {
@@ -428,6 +484,146 @@ html,body{
     color: #fff;
     margin: 15px 0 10px 0;
     font-size: 1rem;
+    letter-spacing: 0.5px;
     font-weight: 300;
   }  
   
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    
+}  
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+    
+@media (max-width: 1024px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .social-icon {
+        flex-direction: column;
+    }
+
+    .social-icon__item {
+        margin: 10px 0;
+    }
+
+    #loc, #phone {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-icon__link {
+        font-size: 1.5rem;
+    }
+
+    .menu__link {
+        font-size: 1rem;
+    }
+}
+
+@media  (max-width: 480px) {
+    .footer {
+        padding: 10px;
+        width: 100%;
+        height: 250px;
+    }
+    .footer p{
+        text-align: center;
+
+    }
+    .social-icon{
+        display: flex;
+        flex-direction: row;
+    }
+    .menu__link {
+        margin: 5px 10px;
+    }
+    #loc p{
+        display: none;
+    }
+    #loc {
+        margin-right: 5px;    
+        position: sticky;
+    }
+    #phone{
+        display: none;
+    }
+    #workingarea #hero{
+        display: flex;
+        height: 50%;
+        top: 35%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #workingarea #hero #heroleft{
+        width: 70%;
+    }
+    #workingarea #hero #heroleft .elem{
+        margin-bottom: 10px;
+        margin-left: 20px;
+        width: 300px;
+    }
+    #workingarea #hero #heroleft button{
+        font-size: 7vw;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        border: transparent;
+        margin-top: 30px;
+        color: black;
+        background: white;
+        background-blend-mode: overlay;
+        margin-left: 20px;
+        box-shadow: 0 0 15px #3f1e9a, 0 0 15px #3538e6, 0 0 15px #1d8889, 0 0 15px #57E2E5;
+    }
+    #workingarea #hero #heroright{
+        display: flex;
+        padding-top: 40px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #workingarea #hero #heroright p{
+        font-size: 18px;
+        text-align: center;
+        font-weight: 500;
+    }
+    #workingarea #hero #heroright .chatbot-button{
+        height: 40px;
+        font-size: 6vw;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px #3f1e9a, 0 0 15px #3538e6, 0 0 15px #1d8889, 0 0 15px #57E2E5;
+    }
+    #workingarea #hero #heroright .chat-container{
+        height: 50vh;
+    }
+    #workingarea #hero #heroright .chat-header .close-btn{
+        font-size: 40px;
+        margin-left: 30px;
+    }
+    #main{
+        height: 85vh;
+        background-image: url('mini.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    #back{
+        height: 0;
+        width: 0;
+        display: none;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+}
+

@@ -19,19 +19,30 @@
         </div>
         <div id="top">
             <div id="workingarea">
+
+                <div  class="sidebar">
+                    <a onclick=hideSidebar() href="#"><ion-icon name="Close"></ion-icon></a>
+                        <a href="new reg\new_reg.html">Join Us</a>
+                        <a href="about page\about.html">about us</a>
+                        <a href="competetions/comp.html">COMPETETIONS</a>
+                        <a href="achievements page/achievements.html">Achievements</a>
+                        <a href="Gallery/gallery.html">Gallery</a>
+                        
+                </div>
                 <div id="nav">
                     <div id="nleft">
-                        <a href="Xan Cursor/index.html"><img src="xan logo.jpg" alt=""></a>
+                        <a id="logo" href="Xan Cursor/index.html"><img src="xan logo.jpg" alt=""></a>
                         <a href="https://jecrcfoundation.com/">
                         <img src="jecrclogo.png" alt=""></a>
-                        <a href="new reg\new_reg.html">register</a>
-                        <a href="about page\about.html">about us</a>
+                        <a class="hideOnMobile" href="new reg\new_reg.html">Join Us</a>
+                        <a class="hideOnMobile" href="about page\about.html">about us</a>
                         
                     </div>
                     <div id="nright">
-                        <a href="competetions/comp.html">COMPETETIONS</a>
-                        <a href="achievements page/index.html">Achievements</a>
-                        <a href="Gallery/gallery.html">Gallery</a>
+                        <a class="hideOnMobile" href="competetions/comp.html">COMPETETIONS</a>
+                        <a class="hideOnMobile" href="achievements page/achievements.html">Achievements</a>
+                        <a class="hideOnMobile" href="Gallery/gallery.html">Gallery</a>
+                        <a onclick=showSidebar() href="#"><ion-icon name="Menu"></ion-icon></a>
                     </div>
                 </div>
                 <div id="hero">
@@ -42,6 +53,8 @@
                             <h1>Unleash</h1>
                             <h1>Design</h1>
                             <h1>Innovate.</h1>
+                            <h1>Collaborate,</h1>
+                            <h1>Join the</h1>
                         </div>
 
                         <div class="elem">
@@ -50,6 +63,8 @@
                             <h1>your inner</h1>
                             <h1>the future </h1>
                             <h1>Create.</h1>
+                            <h1>innovate with</h1>
+                            <h1>robotics</h1>
                         </div>
 
                         <div class="elem">
@@ -58,6 +73,8 @@
                             <h1>inventor!</h1>
                             <h1>here.</h1>
                             <h1>Automate.</h1>
+                            <h1>Robotics.</h1>
+                            <h1>revolution!</h1>
                         </div>
                          
                         <a href="about page\about.html"><button>Explore Now</button></a>
@@ -67,25 +84,12 @@
                     <div id="heroright">
                         <p>Welcome to Xananoids.</p>
                         <p>Join our Robotics Club to build and program hardware like LFRs, maze solvers, and drones. We organize competitions and nurture software skills.</p>
+                        <p>As the world is growing with the new technologies every day, the members of this club are 
+                            also learning to grow with immense knowledge in this field. </p>
                         <div id="chatbot-container">
-                            <div id="chatbot-button" class="chatbot-button">Chat</div>
-                            <div class="chat-container" id="chat-container">
-                                <div class="chat-header">
-                                    <img src="avatar.jpeg" alt="User Avatar" class="avatar">
-                                    <h2>Xananoids</h2>
-                                    <button id="close-btn" class="close-btn">&times;</button>
-                                </div>
-                                <div class="chat-box" id="chat-box">
-                                    <!-- Chat messages will be appended here -->
-                                </div>
-                                <div class="chat-input">
-                                    <input type="text" id="user-input" placeholder="Type a message...">
-                                    <button id="send-btn">Send</button>
-                                </div>
-                            </div>
-
+                            <div id="chatbot-button" class="chatbot-button"><a href="./new reg/new_reg.html">JOIN</a></div>
                         </div>
-                        
+                   
                     </div>
                 </div>
             </div>
@@ -96,7 +100,7 @@
     <footer id="contact" class="footer">
         <ul class="social-icon">
           <li id="loc" class="social-icon__item"><a class="social-icon__link" href="https://www.bing.com/ck/a?!&&p=68278780ba9a118eJmltdHM9MTcxOTk2NDgwMCZpZ3VpZD0xNjQ4ODExMS05ZWM5LTY1YzEtMTMyYS05MzJiOWYzYjY0ZTUmaW5zaWQ9NTUwNw&ptn=3&ver=2&hsh=3&fclid=16488111-9ec9-65c1-132a-932b9f3b64e5&u=a1L21hcHM_Jm1lcGk9MTJ-RGlyZWN0aW9uc35Vbmtub3dufkRpcmVjdGlvbl9CdXR0b24mdHk9MCZydHA9cG9zLjI2Ljg5MjQ1MjIzOTk5MDIzNF83NS44MDY2MTc3MzY4MTY0X19KRUNSQyUyMEZvdW5kYXRpb25fX2VffiZtb2RlPWQmdj0yJnNWPTE&ntb=1">
-            <ion-icon name="Location"></ion-icon><p>JECRC Foundation, <br> Jaipur</p>
+            <ion-icon id="logo" name="Location"></ion-icon><p>JECRC Foundation, <br> Jaipur</p>
           </a></li>
           <li class="social-icon__item"><a class="social-icon__link" href="https://mail.google.com/mail/u/0/#inbox?compose=HfxTvRQvsVFVMnMssSqZwfNrdltzRcJqLKrtscrPSkNsFXSSlMqrvwHNCkwfVdSLgMjSzLvxlVzdDGKXrjvTGCDSGTqkWxNZQbzLqvTrxwCPmNgsvRMgNlXdQrlNGKFPrFbHsFDPLSfPfNhQgmjttKzpBsgRBdWCkbmcFv">
               <ion-icon name="Mail"></ion-icon>
@@ -104,6 +108,9 @@
           <li class="social-icon__item"><a class="social-icon__link" href="http://www.youtube.com/@xananoidsclub8813">
               <ion-icon name="logo-Youtube"></ion-icon>
             </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/XananoidsRobotic">
+                <ion-icon name="logo-Github"></ion-icon>
+              </a></li>
           <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/company/78988606/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BOlAV%2BQRXSRyLvbRxz9Lryg%3D%3D">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a></li>
@@ -116,13 +123,13 @@
         </ul>
         <ul class="menu">
           <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Competetions</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Register</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Chat</a></li>
+          <li class="menu__item"><a class="menu__link" href="./about page/about.html">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="./competetions/comp.html">Competetions</a></li>
+          <li class="menu__item"><a class="menu__link" href="./new reg/new_reg.html">Join Now</a></li>
+          <li class="menu__item"><a class="menu__link" href="./achievements page/achievements.html">Achievements</a></li>
     
         </ul>
-        <p>&copy; 2024 Xananoids | All Rights Reserved</p>
+        <p>&copy; 2024 Xananoids | All Rights Reserved | Developed & Maintained By Xananoids Development Team</p>
       </footer>
         
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
