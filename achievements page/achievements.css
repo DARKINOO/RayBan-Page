@@ -11,6 +11,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: #333;
+    overflow-x: hidden;
 }
 
 header {
@@ -195,7 +196,7 @@ h1 {
 
 .footer {
     position: relative;
-    width: 1170px;
+    width: 100vw;
     min-height: 80px;
     padding: 20px 50px;
     display: flex;
@@ -369,4 +370,5 @@ h1 {
         display: none;
     }
   }      
+ 
 

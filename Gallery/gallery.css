@@ -164,6 +164,7 @@ body {
   .footer {
     position: relative;
     width: 1280px;
+    width: 100vw;
     min-height: 80px;
     padding: 20px 50px;
     display: flex;

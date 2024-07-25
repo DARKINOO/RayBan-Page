@@ -12,6 +12,7 @@
 html,body{
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 #main{
@@ -392,11 +393,12 @@ html,body{
 
 .footer {
     position: relative;
-    width: 1280px;
+
+    width: 100vw;
     min-height: 80px;
     padding: 20px 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     font-family: arial;
@@ -431,7 +433,6 @@ html,body{
   #loc {
     position: absolute;
     margin-right: 800px;
-    margin: px;
     margin-top: 20px;
     left: 0;
     top: 0;
@@ -542,7 +543,7 @@ html,body{
 @media  (max-width: 480px) {
     .footer {
         padding: 10px;
-        width: 100%;
+        width: 100vw;
         height: 250px;
     }
     .footer p{

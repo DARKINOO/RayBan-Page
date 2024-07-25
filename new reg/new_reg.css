@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background: url('https://www.bing.com/th/id/OGC.f194c53cb22cc3a9ac706fefe2ac4bd8?pid=1.7&rurl=https%3a%2f%2fwallpapercave.com%2fwp%2fwp2757874.gif&ehk=9Gkq6haELOWBu79HJk3gKc5YhkbFvn2NFzm%2foNp7CSw%3d');
     background-size: cover;
+    overflow-x: hidden;
 }
 
 .container {
@@ -52,6 +53,7 @@ body {
 .info-box .domains .box{
     display: flex;
     gap: 20px;
+    padding-bottom: 10px;
 }
 
 .info-box .domains .box .icons{
@@ -79,9 +81,10 @@ body {
     cursor: pointer;
 }
 
-.info-box .domains .box .icons h4{
+.info-box .domains .box .icons h5{
     justify-content: center;
     display: flex;
+    
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -114,6 +117,8 @@ body {
 
 .register-box .input-box {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-evenly;
     margin-bottom: 30px;
     font-size: 15px;
@@ -183,8 +188,9 @@ body {
   .footer {
     position: relative;
     width: 1200px;
+    width: 100vw;
     min-height: 80px;
-    padding: 20px 50px;
+    padding: 20px 10px;
     display: flex;
     justify-content: center;
     align-items: center;

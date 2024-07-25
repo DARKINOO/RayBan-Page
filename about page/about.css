@@ -390,6 +390,7 @@ body {
 #st{
   color: #fff;
   line-height: 20px;
+  margin-bottom: 50px;
 }
 
 .page3 .team-container {
@@ -500,7 +501,7 @@ body {
 
 .page4{
   height: 1300px;
-  background-color:  rgb(159, 160, 161);
+  background-color: rgb(159, 160, 161);
   padding: 40px;
 }
 
@@ -527,8 +528,7 @@ body {
   width: 300px;
   height: 350px;
   animation: 1.5s fadeInUp;
-  margin-right: 30px;
-  margin-left: 40px;
+  margin-left: 120px;
   margin-top: 30px;
   overflow: hidden;
   border-radius: 10px;
@@ -610,6 +610,7 @@ body {
 .footer {
   position: relative;
   width: 1300px;
+  width: 100vw;
   background: #0f1010;
   min-height: 80px;
   padding: 20px 50px;
@@ -852,6 +853,7 @@ body {
   .icard img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
     border-radius: 10px;
   }
   
@@ -873,6 +875,7 @@ body {
 
   .icard:hover h4{
     opacity: 1;
+    color: #ccc;
   }
 
   .technologyPage {
@@ -1057,11 +1060,12 @@ body {
 }
 
 .page4 .team-member {
-width: 125px;
+width: 145px;
 height: 160px;
 animation: none;
 margin-right: 30px;
-margin-top: 30px;
+margin-left: 10px;
+margin-top: 40px;
 }
 
 .page4 .team-member img {
