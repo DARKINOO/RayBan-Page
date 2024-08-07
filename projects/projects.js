@@ -77,7 +77,7 @@ let users = [
          displayPic: "bot2.jpeg",
          pendingMessage: 3,
          location: "Jai Dhingra, Yash Jain",
-         name: "Xana ChatBot",
+         name: "Xana",
          age: '',
          interests: [{
           icon: `<i class="ri-robot-3-fill"></i>`,
