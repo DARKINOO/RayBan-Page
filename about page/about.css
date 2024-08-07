@@ -31,6 +31,7 @@ body {
 body {
   overflow-x: hidden;
   background: #111;
+  
 }
 
 .page3 {
@@ -917,7 +918,7 @@ body {
   }
   
   .techParts {
-    width: 90%;
+    width: 45vw;
     height: 50%;
     background: rgb(212, 214, 215);
     /* margin: 2.5vh 2.5vw; */
@@ -926,6 +927,11 @@ body {
     align-items: center;
     padding-left: 5px;
     border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  #right{
+    width: 45vw;
     margin-right: 10px;
   }
   
@@ -1042,7 +1048,8 @@ body {
 }
 
 .page4{
-  height: 150vh;
+  height: 160vh;
+  padding: 20px;
 }
 
 .page4 h1{
@@ -1054,16 +1061,16 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  height: 150vw;
   animation: none;
+  width: 100vw;
 }
 
 .page4 .team-member {
 width: 145px;
 height: 160px;
 animation: none;
-margin-right: 30px;
-margin-left: 10px;
+margin-right: 5px;
+margin-left: 5px;
 margin-top: 40px;
 }
 

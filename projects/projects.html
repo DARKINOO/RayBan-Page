@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xan-Projects</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .detailscontainer{
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .9));
+        }
+    </style>
+</head>
+<body>
+    <div class="w-full h-screen overflow-hidden bg-black font-['Gilroy']">
+        <div class="imgcontainer w-[80vw] h-[100vh] my-[10vh] mx-[2vw] md:w-[80vw] md:h-[100vh] md:mr-[10vw] md:ml-[10vw] md:my-[10vh] w-full h-screen relative overflow-hidden">
+            <div class="maincard z-[3] w-[120%] absolute h-[120%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                <img id="mc" class="w-full h-full object-cover md:object-fill bg-black" src="" alt="">
+            </div>
+            <div class="incomingcard z-[2] w-[120%] absolute h-[120%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                <img id="ic" class="w-full h-full object-cover md:object-fill bg-black" src="" alt="">
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 z-[4] w-full h-screen  flex flex-col justify-between">
+            <div class="navbar md:bg-black px-5 py-3 flex justify-between items-center text-white">
+                <div class="prlfimg w-[3rem] h-[3rem] rounded-full md:w-[3rem] md:h-[3rem] overflow-hidden bg-red-600">
+                    <img id="pc" class="w-full h-full object-cover" src="" alt="">
+                </div>
+                <h3 class="font-medium text-2xl tracking-tighter ml-[30px] md:text-4xl">Projects</h3>
+                <div class="backp">
+                    <a href="/about page/about.html" class="flex items-center gap-[10px]"><i class="ri-corner-up-left-line text-lg"></i>
+                    <h4>About</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="detailscontainer w-full md:w-[80vw] md:mx-[10vw]">
+                <div class="details px-5 py-3 w-full">
+                    <div class="element location flex gap-4">
+                        <i class="w-[2rem] h-[2rem]
+                        md:w-[2rem] md:h-[2rem] flex items-center justify-center rounded-full bg-white font-semibold ri-corner-left-up-line"></i>
+                        <h3 class="text-white ">India, Noida</h3>
+                    </div>
+                    <div class="element name flex gap-5 text-white mt-1">
+                        <h1 class=" tracking-tighter font-regular text-4xl md:text-6xl ">Lina</h1>
+                        <h1 class=" tracking-tighter font-regular text-7xl opacity-60">20</h1>
+                    </div>
+                    <div class="element tags flex gap-3 text-white mt-4 ">
+                    </div>
+                    <div class="element bio text-white/80 mt-5">
+                        <h3 class="text-xl md:text-4xl">Bio</h3>
+                        <p class="text-md md:text-lg mt-3"></p>
+                    </div>
+                    <div class="element flex items-start mt-10 gap-1">
+                        <button class="deny py-3 rounded-lg w-1/2 bg-white">
+                            <a href="/about page/about.html"><i class="font-semibold text-xl md:text-3xl ri-close-line"></i></a>
+                        </button>
+                        <button class="accept py-3 rounded-lg w-1/2 bg-blue-200">
+                            <h3 class="text-xl md:text-3xl text-black">Next</h3>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="projects.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

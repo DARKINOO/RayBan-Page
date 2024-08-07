@@ -45,9 +45,8 @@ gsap.from('.heading span',{
   }
 })
 
-
-
-
+if (ScrollTrigger.isTouch === 0) {
+  
 tl2.from('.techParts:nth-child(2n + 1)',{
   transform: "translateX(-120%)",
   // duration: .22,
@@ -80,6 +79,43 @@ tl2.from('.techParts:nth-child(2n)',{
     // pin: true
   }
 })
+}
+
+
+
+
+// tl2.from('.techParts:nth-child(2n + 1)',{
+//   transform: "translateX(-120%)",
+//   // duration: .22,
+//   stagger : 0.05,
+//   opacity : 0,
+//   scrollTrigger: {
+//     trigger: ".techDetails, .technologyPage",
+//     scroller: "body",
+//     // markers: true,
+//     start: "top 80%",
+//     end: "top 0%",
+//     scrub: 5,
+//     // pin: true
+//   }
+// })
+
+
+// tl2.from('.techParts:nth-child(2n)',{
+//   transform: "translateX(120%)",
+//   // duration: .22,
+//   stagger : 0.05,
+//   opacity : 0,
+//   scrollTrigger: {
+//     trigger: ".techDetails, .technologyPage",
+//     scroller: "body",
+//     // markers: true,
+//     start: "top 80%",
+//     end: "top 0%",
+//     scrub: 5,
+//     // pin: true
+//   }
+// })
 
 
 // tl3.from('.page3',{
