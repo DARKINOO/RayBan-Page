@@ -608,9 +608,9 @@ html,body{
     }
     #workingarea #hero #heroleft .elem{
         margin-bottom: 10px;
-        margin-left: 20px;
-        width: 350px;
-        height: 55px;
+        /* margin-left: 20px; */
+        width: 70vw;
+        height: 7vh;
     }
     #workingarea #hero #heroleft .elem h1{
         position: absolute;

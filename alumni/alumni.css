@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: ronix;
+  src: url(RONIX.ttf);
+}
+
+@font-face {
+  font-family: tex;
+  src: url(texgyreadventor-bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: #111;
+  
+}
+
+.page3{
+    height: 100vh;
+    width: 100vw;
+    background-color:  rgb(215, 219, 222);
+    padding: 40px;
+    padding-top: 20px;
+}
+
+#thanks{
+  background-image: url('https://jecrcfoundation.com/wp-content/uploads/2023/10/JECRC-Building.jpg');
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  background-color: #4a4949;
+}
+
+#thanks2{
+  background-image: url('https://jecrcfoundation.com/wp-content/uploads/2023/10/JECRC-Building.jpg');
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  background-color: #4a4949;
+}
+
+#thanks2{
+  height: 150vh;
+}
+
+.page3 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: kajiro, sans-serif;
+    animation: 1.5s fadeInUp;
+    margin: 30px;
+    font-size: 6vw;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+}
+
+#st{
+  color: #fff;
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+
+.page3 .team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    gap: 20px;
+}
+
+.page3 .team-member {
+    position: relative;
+    margin-top: 8vh;
+    width: 18vw;
+    height: 50vh;
+    animation: 1.5s fadeInUp;
+    margin-right: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0.7, 0, 0.8);
+    transition: transform 0.3s ease;
+}
+
+.page3 .team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#thanks{
+  height: 150vh;
+}
+
+#man{
+    text-align: center;
+}
+
+#stc{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+
+#stc2{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+}
+
+#stc .team-member{
+  margin-top: 20px;
+  height: 320px;
+}
+
+#sir{
+  object-fit: fill;
+}
+
+.page3 .team-member .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.page3 .team-member:hover .overlay {
+    opacity: 1;
+}
+
+.page3 .team-member h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.page3 .team-member h2{
+  color: #d9d8d8;
+  margin-bottom: 10px;
+}
+
+.page3 .social-icons {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.page3 .social-icons i {
+    width: 20px;
+    height: 20px;
+    color: #f5f5f5;
+    font-size: 20px;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.empty {
+    background-color: transparent;
+    border: 2px dashed #ccc;
+}
+
+
+
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+}
+
+.footer {
+  position: relative;
+  width: 1300px;
+  width: 100vw;
+  background: #0f1010;
+  min-height: 80px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+#loc {
+  position: absolute;
+  margin-right: 800px;
+  margin-top: 20px;
+  left: 0;
+  top: 0;
+}
+
+#loc a{
+  text-decoration: none;
+}
+
+#loc a p{
+  font-size: 18px;
+}
+
+#phone {
+  position: absolute;
+  margin-top: 10px;
+  right: 0;
+  top: 0;
+}
+
+#phone a{
+  text-decoration: none;
+}
+
+#phone a p{
+  font-size: 18px;
+  margin: 2px;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+@media (max-width: 480px) {
+
+#st{
+  text-align: center;
+  line-height: 35px;
+}  
+#stc{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2 ,1fr);
+  margin: 30px;
+  margin-top: 0px;
+}
+
+#stc .team-member{
+  height: 200px;
+}
+
+#stc2{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2 ,1fr);
+  margin: 20px;
+  margin-top: 10px;
+}
+
+#stc2 .team-member{
+  height: 200px;
+}
+
+
+#thanks2{
+  height: 150vh;
+  overflow-y: hidden;
+}
+
+#vks{
+  text-align: center;
+  
+}
+
+.page3 h1{
+  animation: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: kajiro, sans-serif;
+  animation: 1.5s fadeInUp;
+  margin: 30px;
+  margin-bottom: 15px;
+  font-size: 13vw;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+}
+
+  .page3 .team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+    margin-top: 0px;
+    animation: none;
+}
+.page3 .team-member h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+.page3 .team-member h2{
+  font-size: 15px;
+}
+.page3 .team-member {
+  position: relative;
+  width: 145px;
+  height: 175px;
+  margin-right: 10px;
+  margin-top: 20px;
+  animation: none;
+}
+
+
+  .footer {
+      padding: 10px;
+      width: 100%;
+      height: 250px;
+      overflow-y: hidden;
+  }
+  .footer p{
+    text-align: center;
+  }
+  .social-icon{
+      display: flex;
+      flex-direction: row;
+  }
+  .menu__link {
+      margin: 5px 10px;
+  }
+  #loc p{
+      display: none;
+  }
+  #loc {
+      margin-right: 5px;  
+      margin-bottom: 17px;  
+      position: sticky;
+  }
+  #phone{
+      display: none;
+  }
+}
+
+

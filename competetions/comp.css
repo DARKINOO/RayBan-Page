@@ -172,6 +172,7 @@ body {
     justify-content: flex;
     align-items: center;
     flex-direction: column;
+    overflow-y: hidden;
     
   }
   
@@ -332,12 +333,15 @@ body {
       
     .footer {
         width: 70vw;
-        height: 200px;
+        height: 35vh;
+        overflow-y: hidden;
     }
     .social-icon{
         display: flex;
         flex-direction: row;
-        margin-right: 30px;
+        margin-right: 20vw;
+        margin-left: 10vw;
+        text-align: center;
     }
     .menu__link {
       position: static;
@@ -351,8 +355,9 @@ body {
         display: none;
     }
     #loc {
-        margin-right: 5px;    
-        position: sticky;
+        margin-right: 20vw;    
+        position: static;
+        display: none;
     }
     #phone{
         display: none;
@@ -363,5 +368,6 @@ body {
       font-weight: 300;
       text-align: center;
       letter-spacing: 2px;
+      margin: 10px 0 0 0;
     }   
   }
