@@ -198,7 +198,7 @@ h1 {
     position: relative;
     width: 100vw;
     min-height: 80px;
-    padding: 20px 50px;
+    padding: 20px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
