@@ -14,6 +14,7 @@ body {
     overflow-x: hidden;
 }
 
+
 .navlist{
     text-align: center;
     font-family: 'kajiro';
@@ -21,6 +22,37 @@ body {
     letter-spacing: 8px;
     color: #f0f0f0;
     animation: 1s fadeInUp;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 -10px rgba(0,0,0,0.1);
+  display: none;
+  gap: 40px;
+  padding-top: 20px;
+  flex-direction: column;
+  padding-left: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+.sidebar a{
+  width: 100%;
+  pointer-events: all;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .container {
