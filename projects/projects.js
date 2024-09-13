@@ -56,19 +56,19 @@ let users = [
       {
        id: "tejas",
        profilePic: "/xan logo.jpg",
-       displayPic:"/about page/tejas.jpeg",
+       displayPic:"/about page/clock.jpeg",
        pendingMessage: 4,
        location: "",
-       name: "Tejas the War bot",
+       name: "Hollow Clock",
        age: '',
        interests: [{
-        icon: `<i class="ri-shield-line"></i>`,
-        interest: "Defence"
+        icon: `<i class="ri-switch-line"></i>`,
+        interest: "IOT"
        },{
         icon: `<i class="ri-robot-2-line"></i>`,
         interest: "Design"
        }],
-       bio: "Tejas, our club’s pinnacle of combat engineering. Crafted by the talented members of Xananoids, Tejas is a war bot designed for peak performance and tactical excellence. Equipped with advanced mechanisms and precision controls, Tejas excels in high-stakes environments. ",
+       bio: "Our club, Xananoids, has developed an innovative Hollow Clock, a project that integrates IoT technology to offer unique time-tracking capabilities. This clock not only displays time in a hollow, modern design but also connects to smart devices for enhanced functionality.",
        isFriend: null
     },
       {  

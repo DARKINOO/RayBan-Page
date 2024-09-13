@@ -30,8 +30,7 @@ body {
 
 body {
   overflow-x: hidden;
-  background: #111;
-  
+  background: #080808;
 }
 
 .page3 {
@@ -724,6 +723,7 @@ body {
     align-items: start;
     margin-right: 20px;
     padding-bottom: 40px;
+    overflow-x: hidden;
   }
 
   .logoName {
@@ -740,7 +740,11 @@ body {
     height: 30px;
     align-items: center;
   }
-
+  
+  .history{
+    width: 100vw;
+    overflow-x: hidden;
+  }
   .history h1{
     font-size: 38px;
   }
@@ -766,7 +770,7 @@ body {
   }
   
   .images {
-    width: 100%;
+    width: 100vw;
     height: 50vh;
     display: flex;
     justify-content: start;
@@ -812,29 +816,29 @@ body {
     width: 100vw;
     height: 130vh;
     background: rgb(212, 214, 215);
-    overflow: hidden;
-    display: inline;
+    overflow-x: hidden;
+    display: inline-block;
+    margin-bottom: 0;
   }
 
   .box2 .heading{
-   color: #fff;
    text-align: center;
-   width: 150vw;
+   width: 100vw;
+   overflow-x: hidden;
    height: 10vh;
    background: rgb(212, 214, 215);
    z-index: 20;
    position: relative;
-   left: -25%;
    color: #111;
   }
   
   .images2 {
-    width: 100%;
-    padding-left: 20px;
+    width: 100vw;
+    padding-left: 3vw;
     height: 120vh;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    margin-top: 20px;
+    margin-top: 5vh;
     background:  rgb(212, 214, 215);
     position: relative;
     z-index: 1;
@@ -879,13 +883,11 @@ body {
   }
 
   .technologyPage {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: #111;
     position: relative;
     color: rgb(212, 214, 215);
-    /* left: 1%; */
-    /* overflow: hidden; */
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -897,12 +899,12 @@ body {
     justify-content: center;
     align-items: center;
     font-family: tex, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
   }
   
   .techHeading {
-    padding: 25px 0 0 0;
+    padding: 20px 0 0 0;
   }
   
   .techDetails {
@@ -1092,10 +1094,12 @@ text-align: center;
   .footer {
       padding: 10px;
       width: 100%;
-      height: 250px;
+      height: 35vh;
+      overflow-x: hidden;
   }
   .footer p{
     text-align: center;
+    font-size: 1rem;
   }
   .social-icon{
       display: flex;
@@ -1103,6 +1107,7 @@ text-align: center;
   }
   .menu__link {
       margin: 5px 10px;
+      font-size: 1rem;
   }
   #loc p{
       display: none;
