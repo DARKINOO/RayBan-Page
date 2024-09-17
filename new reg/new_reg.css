@@ -20,9 +20,20 @@ body {
     gap: 40px;
 }
 
-.info-box, .register-box {
+.register-box{
+  background-color: #5f5c5c;
+  height: 500px;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  padding-top: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-box{
     background-color: #5f5c5c;
-    height: 500px;
+    height: 85vh;
+    width: 45vw;
     color: white;
     padding: 40px;
     border-radius: 10px;
@@ -91,7 +102,7 @@ body {
 
 .register-box {
     flex: 1;
-    background-color: rgb(147, 138, 138);
+    background-color: rgb(80, 78, 78);
     background-image: url('/Gallery/DSC02760.JPG');
     background-size: cover;
     background-position: center;
@@ -112,6 +123,53 @@ body {
 }
 
 .register-box h2{
+  color: white;
+}
+
+.d{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d .icons{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.d .icons:hover{
+  padding: 10px;
+  scale: 1.2;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgb(138, 144, 149);
+  transition: .3s linear all;
+}
+
+.d .icons i{
+  margin: 10px;
+  margin-bottom: 0;
+  font-size: 35px;
+  cursor: pointer;
+  color: white;
+}
+.d .icons h5{
+  justify-content: center;
+  display: flex;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+.d .content{
+  margin-bottom: 2vh;
+  margin-left: 2vw;
+}
+.d .content p{
   color: white;
 }
 
@@ -380,7 +438,7 @@ body {
 
   /* #contact{
     width: 90vw;
-  } */
+  }*/
 
   #domain{
     margin-left: 12vw;
@@ -399,7 +457,15 @@ body {
     border-radius: 5px;
   }
 
-  .register-box .input-box {
+  .register-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+    font-size: 15px;
+  } 
+   .input-box {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -408,6 +474,10 @@ body {
     font-size: 15px;
 }
 
+.d .content{
+  margin-bottom: 2vh;
+  margin-left: 10vw;
+}
 
     .footer {
         margin-top: 60px;

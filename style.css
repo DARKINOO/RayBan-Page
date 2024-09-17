@@ -97,8 +97,14 @@ html,body{
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
-    color: white;
+    transition: .2s linear;
+    color: rgb(255, 255, 255);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#nav a:hover{
+    color: #5b5b5b;
+    scale: 1.2;
 }
 
 #menu{
@@ -136,6 +142,7 @@ html,body{
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 
 #workingarea #hero{
