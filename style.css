@@ -102,9 +102,11 @@ html,body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#nav a:hover{
-    color: #5b5b5b;
+.hideOnMobile:hover{
     scale: 1.2;
+    padding: 2px;
+    background-color: rgb(79, 78, 78);
+    border-radius: 2px;
 }
 
 #menu{
