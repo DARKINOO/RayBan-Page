@@ -39,73 +39,73 @@ elems.forEach(function(elem){
 
 
 
-document.getElementById('chatbot-button').addEventListener('click', function() {
-    document.getElementById('chat-container').classList.toggle('active');
-});
+// document.getElementById('chatbot-button').addEventListener('click', function() {
+//     document.getElementById('chat-container').classList.toggle('active');
+// });
 
-document.getElementById('send-btn').addEventListener('click', sendMessage);
-document.getElementById('user-input').addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-        sendMessage();
-    }
-});
+// document.getElementById('send-btn').addEventListener('click', sendMessage);
+// document.getElementById('user-input').addEventListener('keypress', function (e) {
+//     if (e.key === 'Enter') {
+//         sendMessage();
+//     }
+// });
 
-document.getElementById('close-btn').addEventListener('click', function() {
-    document.getElementById('chat-container').classList.remove('active');
-    document.getElementById('chatbot-button').style.display = 'flex';
-});
+// document.getElementById('close-btn').addEventListener('click', function() {
+//     document.getElementById('chat-container').classList.remove('active');
+//     document.getElementById('chatbot-button').style.display = 'flex';
+// });
 
 
-function sendMessage() {
-    const userInput = document.getElementById('user-input');
-    const message = userInput.value.trim();
+// function sendMessage() {
+//     const userInput = document.getElementById('user-input');
+//     const message = userInput.value.trim();
 
-    if (message === '') return;
+//     if (message === '') return;
 
-    appendMessage('user', message);
-    userInput.value = '';
+//     appendMessage('user', message);
+//     userInput.value = '';
 
-    // Simulate bot response
-    setTimeout(() => {
-        fetch('/chat', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ message: message })
-        })
-        .then(response => response.json())
-        .then(data => {
-            appendMessage('bot', data.response);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            appendMessage('bot', "Sorry, something went wrong.");
-        });
-    }, 1000);
-}
+//     // Simulate bot response
+//     setTimeout(() => {
+//         fetch('/chat', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             },
+//             body: JSON.stringify({ message: message })
+//         })
+//         .then(response => response.json())
+//         .then(data => {
+//             appendMessage('bot', data.response);
+//         })
+//         .catch(error => {
+//             console.error('Error:', error);
+//             appendMessage('bot', "Sorry, something went wrong.");
+//         });
+//     }, 1000);
+// }
 
-function appendMessage(sender, message) {
-    const chatBox = document.getElementById('chat-box');
-    const messageElement = document.createElement('div');
-    messageElement.classList.add('message', sender);
+// function appendMessage(sender, message) {
+//     const chatBox = document.getElementById('chat-box');
+//     const messageElement = document.createElement('div');
+//     messageElement.classList.add('message', sender);
 
-    const imgElement = document.createElement('img');
-    if (sender === 'user') {
-        imgElement.src = 'user.jpeg'; // User icon
-    } else {
-        imgElement.src = 'xan logo.jpg'; // Bot icon
-    }
+//     const imgElement = document.createElement('img');
+//     if (sender === 'user') {
+//         imgElement.src = 'user.jpeg'; // User icon
+//     } else {
+//         imgElement.src = 'xan logo.jpg'; // Bot icon
+//     }
 
-    const textElement = document.createElement('p');
-    textElement.textContent = message;
+//     const textElement = document.createElement('p');
+//     textElement.textContent = message;
 
-    messageElement.appendChild(imgElement);
-    messageElement.appendChild(textElement);
+//     messageElement.appendChild(imgElement);
+//     messageElement.appendChild(textElement);
 
-    chatBox.appendChild(messageElement);
-    chatBox.scrollTop = chatBox.scrollHeight;
-}
+//     chatBox.appendChild(messageElement);
+//     chatBox.scrollTop = chatBox.scrollHeight;
+// }
 
 
 function showSidebar(){
@@ -119,32 +119,98 @@ function hideSidebar(){
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll("nav a");
-    const content = document.getElementById("content");
+// document.addEventListener("DOMContentLoaded", () => {
+//     const links = document.querySelectorAll("nav a");
+//     const content = document.getElementById("content");
     
-    const loadContent = (page) => {
-        fetch(page)
-            .then(response => response.text())
-            .then(data => {
-                content.innerHTML = data;
-            })
-            .catch(error => {
-                content.innerHTML = "<p>Error loading content. Please try again later.</p>";
-                console.error('Error fetching content:', error);
-            });
-    };
+//     const loadContent = (page) => {
+//         fetch(page)
+//             .then(response => response.text())
+//             .then(data => {
+//                 content.innerHTML = data;
+//             })
+//             .catch(error => {
+//                 content.innerHTML = "<p>Error loading content. Please try again later.</p>";
+//                 console.error('Error fetching content:', error);
+//             });
+//     };
 
-    links.forEach(link => {
-        link.addEventListener("click", (event) => {
-            event.preventDefault();
-            const page = event.target.getAttribute("data-page");
-            loadContent(page);
-        });
-    });
+//     links.forEach(link => {
+//         link.addEventListener("click", (event) => {
+//             event.preventDefault();
+//             const page = event.target.getAttribute("data-page");
+//             loadContent(page);
+//         });
+//     });
 
-    //Load initial content
-    loadContent("index.html")
+//     //Load initial content
+//     loadContent("index.html")
+// });
+
+let isLoading = false;
+
+function showLoader() {
+    isLoading = true;
+    const loader = document.querySelector('.loading-screen');
+    loader.classList.add('active');
+}
+
+function hideLoader() {
+    isLoading = false;
+    const loader = document.querySelector('.loading-screen');
+    loader.classList.remove('active');
+}
+
+// Show loader before page loads
+document.addEventListener('DOMContentLoaded', function() {
+    showLoader();
+    setTimeout(hideLoader, 3000);
 });
 
+// Intercept all link clicks
+document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (link && link.getAttribute('href')) {
+        const href = link.getAttribute('href');
+        // Don't show loader for hashtag links
+        if (href.startsWith('#')) return;
+        
+        e.preventDefault();
+        showLoader();
+        
+        setTimeout(() => {
+            window.location.href = href;
+        }, 3000);
+    }
+});
+
+// Handle browser back/forward buttons
+window.addEventListener('popstate', function() {
+    showLoader();
+});
+
+// Handle initial page load
+window.onload = function() {
+    if (!isLoading) {
+        showLoader();
+        setTimeout(hideLoader, 3000);
+    }
+};
+
+// Modify your existing loadContent function if you have one
+const loadContent = (page) => {
+    showLoader();
+    fetch(page)
+        .then(response => response.text())
+        .then(data => {
+            setTimeout(() => {
+                document.getElementById('content').innerHTML = data;
+                hideLoader();
+            }, 3000);
+        })
+        .catch(error => {
+            console.error('Error fetching content:', error);
+            hideLoader();
+        });
+};
 

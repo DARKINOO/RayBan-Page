@@ -11,6 +11,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="loading-screen">
+        <div class="loader">
+            <svg class="loader-logo" viewBox="0 0 300 300">
+                <!-- Circuit lines background -->
+                <g class="circuit-lines">
+                    <path class="circuit" d="M50 50 L100 50 L100 100 L150 100" />
+                    <path class="circuit" d="M250 50 L200 50 L200 100 L150 100" />
+                    <path class="circuit" d="M50 250 L100 250 L100 200 L150 200" />
+                    <path class="circuit" d="M250 250 L200 250 L200 200 L150 200" />
+                </g>
+                <!-- Main X -->
+                <path class="x-path" d="M75 75 L225 225 M225 75 L75 225" />
+                <!-- Outer circle -->
+                <circle class="outer-circle" cx="150" cy="150" r="150" />
+                <!-- Text -->
+                <text class="logo-text" x="150" y="50" text-anchor="middle">XANANOIDS</text>
+                <text class="logo-text small" x="150" y="260" text-anchor="middle">THE ROBOTIC PEOPLE</text>
+            </svg>
+        </div>
+    </div>
     <div id="main">
         <div id="back">
             <img src="robot.jpg" alt="">
@@ -23,7 +43,7 @@
             <div id="workingarea">
 
                 <div  class="sidebar">
-                    <a onclick=hideSidebar() href="#"><ion-icon name="Close"></ion-icon></a>
+                    <a onclick=hideSidebar()><ion-icon name="Close"></ion-icon></a>
                         <a href="new reg\new_reg.html">Register</a>
                         <a href="about page\about.html">about us</a>
                         <a href="competetions/comp.html">COMPETETIONS</a>
@@ -33,7 +53,7 @@
                 </div>
                 <div id="nav">
                     <div id="nleft">
-                        <a id="logo" href="Xan Cursor/index.html"><img src="xan logo.jpg" alt=""></a>
+                        <a id="logo"><img src="xan logo.jpg" alt=""></a>
                         <a href="https://jecrcfoundation.com/">
                         <img src="jecrclogo.png" alt=""></a>
                         <a class="hideOnMobile" href="new reg\new_reg.html">Register</a>
@@ -45,7 +65,7 @@
                         <a class="hideOnMobile" href="competetions/comp.html">COMPETETIONS</a>
                         <a class="hideOnMobile" href="achievements page/achievements.html">Achievements</a>
                         <a class="hideOnMobile" href="Gallery/gallery.html">Gallery</a>
-                        <a onclick=showSidebar() href="#"><ion-icon id="ic" name="Menu"></ion-icon></a>
+                        <a onclick=showSidebar()><ion-icon id="ic" name="Menu"></ion-icon></a>
                     </div>
                 </div>
                 <div id="hero">
